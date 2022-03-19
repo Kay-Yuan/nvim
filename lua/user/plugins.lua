@@ -76,7 +76,7 @@ return packer.startup(function(use)
   use { 'hrsh7th/cmp-path', commit = '466b6b8270f7ba89abd59f402c73f63c7331ff6e' } -- path completions
   use { 'hrsh7th/cmp-cmdline', commit = 'f4beb74e8e036f9532bedbcac0b93c7a55a0f8b0' } -- cmdline completions
   use { 'saadparwaiz1/cmp_luasnip', commit = 'd6f837f4e8fe48eeae288e638691b91b97d1737f' } -- snippet completions
-  use { 'hrsh7th/cmp-nvim-lsp', commit = 'ebdfc204afb87f15ce3d3d3f5df0b8181443b5ba' } 
+  use { 'hrsh7th/cmp-nvim-lsp', commit = 'ebdfc204afb87f15ce3d3d3f5df0b8181443b5ba' }
 
   -- snippets
   use { 'L3MON4D3/LuaSnip', commit = '0d33649415c069af7486b36709bcbebc47fc4f71' } --snippet engine
@@ -93,6 +93,16 @@ return packer.startup(function(use)
     run = ':TSUpdate',
     commit = 'fd92e70c69330dd8f2f6753d3d987c34e7dacd24',
   }
+
+  -- nvim-tree
+  use {
+    'kyazdani42/nvim-tree.lua',
+    requires = {
+      'kyazdani42/nvim-web-devicons', -- optional, for file icon
+    },
+    commit = 'ec3f10e2116f344d9cc5c9980bddf7819f27d8ae',
+  }
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then

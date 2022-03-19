@@ -16,9 +16,6 @@ vim.g.maplocalleader = ' '
 --   term_mode = "t",
 --   command_mode = "c",
 
-
-keymap('n', '<leader>e', ':Lex<CR>', opts)
-
 -- Window navigation
 keymap('n', '<leader>h', '<C-w>h', opts)
 keymap('n', '<leader>j', '<C-w>j', opts)
@@ -32,6 +29,12 @@ keymap('n', '<S-h>', ':bprevious<CR>', opts)
 -- Save
 keymap('n', '<leader>w', ':w<CR>', opts)
 
+-- Quit
+keymap('n', '<leader>q', ':q<CR>', opts)
+
 -- Telescope
 keymap('n', '<C-p>', ':Telescope find_files<CR>', opts)
 keymap('n', '<leader><leader>', ':Telescope buffers<CR>', opts)
+
+-- nvim-tree
+keymap('n', '<leader>f', ':NvimTreeToggle<CR>', opts)
