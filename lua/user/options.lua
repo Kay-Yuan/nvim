@@ -26,3 +26,4 @@ end
 
 -- use % to jump between pairs
 vim.cmd 'set matchpairs+=<:>'
+vim.cmd 'set clipboard+=unnamedplus'
