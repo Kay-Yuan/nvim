@@ -14,5 +14,3 @@ require 'user.comment'
 require 'user.fidget'
 
 vim.cmd 'source ~/.config/nvim/core/floatterm.vim'
-
--- useless comment, remove me later
