@@ -35,6 +35,14 @@ keymap('n', '<leader>q', ':q<CR>', opts)
 -- Telescope
 keymap('n', '<C-p>', ':Telescope find_files<CR>', opts)
 keymap('n', '<leader><leader>', ':Telescope buffers<CR>', opts)
+keymap('n', '<c-_>', ':telescope current_buffer_fuzzy_find<CR>', opts)
+keymap('n', '<leader>g', ':Telescope live_grep<CR>', opts)
 
 -- nvim-tree
 keymap('n', '<leader>f', ':NvimTreeToggle<CR>', opts)
+
+-- Remove highlight
+keymap('n', '<leader>n', ':noh<CR>', opts)
+
+-- Format
+keymap('n', '<leader>s', ':Format<CR>', opts)

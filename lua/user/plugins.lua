@@ -54,6 +54,13 @@ return packer.startup(function(use)
     commit = '7db1db3cd97079cf9c0089bc04afe71e90256a23',
   }
 
+  -- Deal with Comments
+  use { 'numToStr/Comment.nvim', commit = 'a841f73523440c4f32d39f0290cf1e691311db2a' }
+  use {
+    'JoosepAlviste/nvim-ts-context-commentstring',
+    commit = '7810f1fe706092290dd338f40e5e857bac4a03cf',
+  }
+
   -- File search
   use { 'nvim-lua/popup.nvim', commit = 'b7404d35d5d3548a82149238289fa71f7f6de4ac' }
   use { 'nvim-lua/plenary.nvim', commit = '14dfb4071022b22e08384ee125a5607464b6d397' }
@@ -102,6 +109,15 @@ return packer.startup(function(use)
     },
     commit = 'ec3f10e2116f344d9cc5c9980bddf7819f27d8ae',
   }
+
+  -- Github copilot
+  use { 'github/copilot.vim', commit = '47eb231463d3654de1a205c4e30567fbd006965d' }
+
+  -- Lsp progress
+  use { 'j-hui/fidget.nvim', commit = 'd47f2bbf7d984f69dc53bf2d37f9292e3e99ae8a' }
+
+  -- Float term
+  use { 'voldikss/vim-floaterm', commit = '6244d1739aad6682c6c1d5db18c846c342af6e3e' }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
